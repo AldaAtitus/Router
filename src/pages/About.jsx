@@ -3,22 +3,24 @@ import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header title="Blog React" />
-
+    <div className="min-h-screen flex flex-col">
+      <Header title="React Blog" />
       <main className="flex-1 max-w-4xl mx-auto px-4 py-8 w-full">
-        <section className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 md:p-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Sobre o Blog</h1>
-          <p className="text-gray-700 leading-7">
-            Este projeto foi desenvolvido para praticar os fundamentos de React, organizacao de
-            componentes e estrutura de paginas com React Router. Aqui voce encontra exemplos de
-            listagem de posts, visualizacao de conteudo completo e composicao de interface com
-            componentes reutilizaveis como Header, Footer e Button.
-          </p>
-        </section>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Sobre o Blog</h2>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Este blog foi criado como parte de um estudo dirigido sobre React Router.
+          O objetivo é aprender como funciona a navegação em Single Page Applications
+          utilizando React.
+        </p>
+        <p className="text-gray-700 leading-relaxed mb-4">
+          Aqui você encontra posts sobre React, desenvolvimento web e tecnologias
+          relacionadas. Todo o conteúdo é fictício e serve apenas para fins educacionais.
+        </p>
+        <p className="text-gray-700 leading-relaxed">
+          Tecnologias utilizadas: React, React Router, Tailwind CSS e Vite.
+        </p>
       </main>
-
-      <Footer text="Atitus 2026 - Todos os direitos reservados" />
+      <Footer text="© 2024 React Blog — Guided Study sobre React Router" />
     </div>
   );
 }
